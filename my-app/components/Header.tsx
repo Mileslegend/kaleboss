@@ -30,7 +30,7 @@ const Header = () => {
             <UserButton />
           </SignedIn>
           <SignedOut>
-            <SignInButton mode="modal" fallbackRedirectUrl="/dashboard">
+            <SignInButton mode="modal" fallbackRedirectUrl="/learn">
               <Button size="lg">Log In</Button>
             </SignInButton>
           </SignedOut>

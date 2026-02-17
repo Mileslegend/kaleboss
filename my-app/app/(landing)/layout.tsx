@@ -1,4 +1,4 @@
-import Footer from '@/components/Footer'
+
 import Header from '@/components/Header'
 import FooterGlow from '@/components/mvpblocks/footer-glow'
 import React from 'react'
