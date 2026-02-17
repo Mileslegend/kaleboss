@@ -1,0 +1,103 @@
+{
+  "React Arrow Function Export": {
+    "prefix": "rafce",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE}} = () => {",
+      "  return (",
+      "    <div>${2}</div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React arrow function component with default export"
+  },
+  "React Functional Component": {
+    "prefix": "rfc",
+    "body": [
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>${2}</div>",
+      "  );",
+      "}"
+    ],
+    "description": "Creates a React functional component"
+  },
+  "React Arrow Function": {
+    "prefix": "raf",
+    "body": [
+      "const ${1:ComponentName} = () => {",
+      "  return (",
+      "    <div>${2}</div>",
+      "  );",
+      "};",
+      "",
+      "export default ${1:ComponentName};"
+    ],
+    "description": "Creates a React arrow function component"
+  },
+  "React Hooks - useState": {
+    "prefix": "ushc",
+    "body": [
+      "const [${1:state}, set${1:/capitalize}] = useState(${2:initialValue});"
+    ],
+    "description": "useState hook"
+  },
+  "React Hooks - useEffect": {
+    "prefix": "uef",
+    "body": [
+      "useEffect(() => {",
+      "  ${1}",
+      "}, [${2}]);"
+    ],
+    "description": "useEffect hook"
+  },
+  "React Hooks - useContext": {
+    "prefix": "ucon",
+    "body": [
+      "const ${1:context} = useContext(${2:ContextName});"
+    ],
+    "description": "useContext hook"
+  },
+  "React Hooks - useReducer": {
+    "prefix": "ured",
+    "body": [
+      "const [state, dispatch] = useReducer(${1:reducer}, ${2:initialState});"
+    ],
+    "description": "useReducer hook"
+  },
+  "React Hooks - useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "const ${1:memoizedCallback} = useCallback(() => {",
+      "  ${2}",
+      "}, [${3}]);"
+    ],
+    "description": "useCallback hook"
+  },
+  "React Hooks - useMemo": {
+    "prefix": "umemo",
+    "body": [
+      "const ${1:memoizedValue} = useMemo(() => ${2}, [${3}]);"
+    ],
+    "description": "useMemo hook"
+  },
+  "React Fragment": {
+    "prefix": "frag",
+    "body": [
+      "<>",
+      "  ${1}",
+      "</>"
+    ],
+    "description": "React Fragment"
+  },
+  "React PropTypes": {
+    "prefix": "rpt",
+    "body": [
+      "${1:ComponentName}.propTypes = {",
+      "  ${2:propName}: PropTypes.${3:string},",
+      "};"
+    ],
+    "description": "PropTypes definition"
+  }
+}

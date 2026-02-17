@@ -1,0 +1,15 @@
+{
+  "editor.snippetSuggestions": "top",
+  "[typescriptreact]": {
+    "editor.snippetSuggestions": "top"
+  },
+  "[javascriptreact]": {
+    "editor.snippetSuggestions": "top"
+  },
+  "[javascript]": {
+    "editor.snippetSuggestions": "top"
+  },
+  "[typescript]": {
+    "editor.snippetSuggestions": "top"
+  }
+}
