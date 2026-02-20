@@ -2,14 +2,14 @@ import {getCourses, getUserProgress} from "@/db/queries";
 import {List} from './list'
 
 const CoursesPage = async () => {
-    const courses = await getCourses();
-    const userProgress = await getUserProgress();
+    // const courses = await getCourses();
+    // const userProgress = await getUserProgress();
 
     /*We could add the promises to deal with water fall but i am skipping it */
-    // const coursesData =  getCourses();
-    // const userProgressData =  getUserProgress();
-    //
-    // const [courses, userProgress] = await Promise.all([coursesData, userProgressData]);
+    const coursesData =  getCourses();
+    const userProgressData =  getUserProgress();
+    
+    const [courses, userProgress] = await Promise.all([coursesData, userProgressData]);
 
 
     return (
