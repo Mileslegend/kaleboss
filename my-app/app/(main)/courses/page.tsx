@@ -1,0 +1,28 @@
+import {getCourses, getUserProgress} from "@/db/queries";
+import {List} from './list'
+
+const CoursesPage = async () => {
+    const courses = await getCourses();
+    const userProgress = await getUserProgress();
+
+    /*We could add the promises to deal with water fall but i am skipping it */
+    // const coursesData =  getCourses();
+    // const userProgressData =  getUserProgress();
+    //
+    // const [courses, userProgress] = await Promise.all([coursesData, userProgressData]);
+
+
+    return (
+        <div className={'h-full max-w-228 px-3 mx-auto '}>
+            <h1 className={'text-2xl font-bold text-neutral-700 '}>
+                Skills Courses
+            </h1>
+            <List
+            courses = {courses}
+            activeCourseId ={userProgress?.activeCourseId}
+            />
+        </div>
+    )
+}
+
+export default CoursesPage
